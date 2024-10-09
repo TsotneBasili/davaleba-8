@@ -88,9 +88,7 @@
     font-size: 120px;
     color: red;
     letter-spacing: 20px;
-    animation-name: text;
-    animation-iteration-count: infinite;
-    animation-duration: 0.5s;
+    animation: text infinite 0.5s;
 }
 
 @keyframes text{
@@ -165,14 +163,17 @@
 /* thith */
 /* header  */
 .header {
-    width: min(100%, 1440px); 
+    display: flex;
+    justify-content: center;
+
+    width: 100%; 
     background-color:#367b53;
-    padding: 30px 300px;
+    padding: 30px;
 }
 
 .nav_ul {
     display: flex;
-    justify-content: space-between;
+    column-gap:150px;
 }
 
 .nav_ul_li_a {
